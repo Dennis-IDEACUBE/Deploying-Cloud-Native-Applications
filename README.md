@@ -120,9 +120,14 @@ https://github.com/anchore/grype
 
 https://docs.tilt.dev/install.html
 
+    $ curl -fsSL https://raw.githubusercontent.com/tilt-dev/tilt/master/scripts/install.sh | bash
+
 ### Octant
 
 https://reference.octant.dev/?path=/story/docs-intro--page
+
+    # download https://github.com/vmware-archive/octant/releases
+    # sudo dpkg -i octant_0.x.x_Linux-64bit.deb
 
 ### Kubeval
 
@@ -130,10 +135,19 @@ https://github.com/instrumenta/kubeval(deprecated)
 
 https://github.com/yannh/kubeconform?tab=readme-ov-file
 
+    # download https://github.com/yannh/kubeconform/releases
+    $ tar xvfz kubeconform-linux-amd64.tar.gz
+    $ sudo mv kubeconform /usr/local/bin
+
 ### Knative
 
 https://knative.dev/docs/install/quickstart-install/#before-you-begin
 
+    $ mv <path-to-binary-file> kn
+    $ chmod +x kn
+    $ sudo mv kn /usr/local/bin
+    $ kn version
+    
 ### Sources
 
 https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/sb-3-main
