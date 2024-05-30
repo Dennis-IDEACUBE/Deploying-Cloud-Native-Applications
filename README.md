@@ -6,6 +6,9 @@ https://learn.microsoft.com/ko-kr/windows/wsl/install
 
     # Command Prompt
     wsl --update
+    wsl -v
+    # It must be VERSION 2
+    wsl -l -v
     wsl --list --online
     wsl --install Ubuntu-22.04
     # Reboot
