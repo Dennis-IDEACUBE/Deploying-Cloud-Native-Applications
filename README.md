@@ -15,7 +15,7 @@ https://learn.microsoft.com/ko-kr/windows/wsl/install
 Install Visual Studio Code(https://code.visualstudio.com/download)
 
     WSL(or Remote - SSH) - Extension
-    
+    # Create Ubunt-22.04
     # After jdk 17
     Extension Pack for Java - Extension
     Gradle for Java - Extension
