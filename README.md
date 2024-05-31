@@ -157,7 +157,7 @@ https://knative.dev/docs/install/quickstart-install/#before-you-begin
 https://docs.github.com/ko/packages/working-with-a-github-packages-registry/working-with-the-container-registry
 
     $ export CR_PAT=YOUR_TOKEN
-    $ echo $CR_PAT | docker login ghcr.io -u dennis.lee@ideacube.co.kr --password-stdin
+    $ echo $CR_PAT | docker login ghcr.io -u USERNAME --password-stdin
     
 ### Sources
 
