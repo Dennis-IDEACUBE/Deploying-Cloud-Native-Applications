@@ -91,11 +91,6 @@ https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
     
     $ kubectl get nodes
 
-### Checklist for example execution
-
-    $ cd ~/cloud-native-spring-in-action-sb-3-main
-    $ find ./ -type f -name 'gradlew' -exec chmod 755 {} \;
-
 ### Httpie
 
 https://httpie.io/
@@ -151,6 +146,18 @@ https://knative.dev/docs/install/quickstart-install/#before-you-begin
     $ chmod +x kn
     $ sudo mv kn /usr/local/bin
     $ kn version
+
+### Checklist for example execution
+
+    $ cd ~/cloud-native-spring-in-action-sb-3-main
+    $ find ./ -type f -name 'gradlew' -exec chmod 755 {} \;
+
+### Docker Login Issues
+
+https://docs.github.com/ko/packages/working-with-a-github-packages-registry/working-with-the-container-registry
+
+    $ export CR_PAT=YOUR_TOKEN
+    $ echo $CR_PAT | docker login ghcr.io -u dennis.lee@ideacube.co.kr --password-stdin
     
 ### Sources
 
