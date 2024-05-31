@@ -26,7 +26,7 @@ Install Visual Studio Code(https://code.visualstudio.com/download)
 
 ### Init & Java
 
-    $ sudo apt install zip nano vim iputils-ping git
+    $ sudo apt-get install zip nano vim iputils-ping git
     $ curl -s "https://get.sdkman.io" | bash
     $ sdk list java
     $ sdk install java 17.0.3-tem
