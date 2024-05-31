@@ -126,7 +126,7 @@ https://reference.octant.dev/?path=/story/docs-intro--page
 
     # download https://github.com/vmware-archive/octant/releases
     # sudo dpkg -i octant_0.x.x_Linux-64bit.deb
-    $ sudo dbkg -i octant_0.25.1_Linux-64bit.deb
+    $ sudo dpkg -i octant_0.25.1_Linux-64bit.deb
 
 ### Kubeval
 
