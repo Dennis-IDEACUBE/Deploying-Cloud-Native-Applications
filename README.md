@@ -163,3 +163,25 @@ https://docs.github.com/ko/packages/working-with-a-github-packages-registry/work
 
 https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/sb-3-main
 
+### WSL Export & Import
+
+    * Export
+    wsl --export <WSL Image Name> <Export file>
+    wsl --export Ubuntu-22.04 c:\wsl_export\Ubuntu-22.04.tar
+    
+    * Import
+    wsl --import <Image Name you choose> <Directory to store and run the image> <Directory location of the exported .tar file>
+    wsl --import Ubuntu-22.04-Custom c:\wsl_import c:\wsl_export\Ubuntu-22.04.tar
+    
+    * Login(root) -> /etc/wsl.conf -> LogOut -> Login(user1)
+    
+    wsl -d Ubuntu-22.04-Custom
+    
+    # nano /etc/wsl.conf
+    [user]
+    default=user1
+    
+    # exit
+    wsl -t Ubuntu-22.04-Custom
+    
+    wsl -d Ubuntu-22.04-Custom 
