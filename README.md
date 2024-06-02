@@ -185,3 +185,9 @@ https://github.com/ThomasVitale/cloud-native-spring-in-action/tree/sb-3-main
     wsl -t Ubuntu-22.04-Custom
     
     wsl -d Ubuntu-22.04-Custom 
+
+### Etc
+
+    docker run -d --name catalog-service --net catalog-network -p 9001:9001 -e SPRING_DATASOURCE_URL=jdbc:postgresql://polar-postgres:5432/polardb_catalog -e SPRING_PROFILES_ACTIVE=testdata catalog-service
+
+    docker run -d --name=polar-postgres --net catalog-network -e POSTGRES_USER=user -e POSTGRES_PASSWORD=password -e POSTGRES_DB=polardb_catalog -p 5432:5432 postgres:14.4
